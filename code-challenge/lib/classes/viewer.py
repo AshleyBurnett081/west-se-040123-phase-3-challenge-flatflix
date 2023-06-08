@@ -28,7 +28,12 @@ class Viewer:
         return [review.movie for review in self.reviews()]
 
     def has_reviewed_movie(self, movie):
-        pass
+        for review in self.reviews():
+            if review.movie == movie:
+                return True
+            else:
+                return False
+        
 
 from classes.review import Review
 from classes.movie import Movie
