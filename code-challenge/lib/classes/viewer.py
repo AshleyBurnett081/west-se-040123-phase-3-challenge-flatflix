@@ -15,7 +15,7 @@ class Viewer:
         if '_username' not in dir(self) and isinstance(username, str) and 6 <= len(username) <= 16:
             self._username = username
         else:
-            raise AttributeError('Not from username class')
+            raise AttributeError('Not a str between 6 and 16 characters')
     
     
     

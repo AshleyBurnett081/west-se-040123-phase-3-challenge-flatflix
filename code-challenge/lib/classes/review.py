@@ -39,7 +39,7 @@ class Review:
         if isinstance(rating, int) and rating in range (1,6):
             self._rating = rating
         else:
-            raise AttributeError('Not from rating class')
+            raise AttributeError('Not an int between 1-5')
     
     
 

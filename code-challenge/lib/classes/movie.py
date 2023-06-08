@@ -15,7 +15,7 @@ class Movie:
         if isinstance(title, str) and 1 <= len(title):
             self._title = title
         else:
-            raise AttributeError('Not from title class')
+            raise AttributeError('Not a str greater than one character')
     
     
     def reviews(self):
